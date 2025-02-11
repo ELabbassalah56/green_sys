@@ -1,2 +1,8 @@
-build/
+# Ignore Visual Studio temporary files, build results, and
 *.Zone.Identifier
+*.vscode
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+build/

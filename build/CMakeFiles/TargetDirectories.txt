@@ -1,5 +1,0 @@
-/home/elabbas/system_monitor/green_sys/build/CMakeFiles/monitor.dir
-/home/elabbas/system_monitor/green_sys/build/CMakeFiles/monitor_tests.dir
-/home/elabbas/system_monitor/green_sys/build/CMakeFiles/test.dir
-/home/elabbas/system_monitor/green_sys/build/CMakeFiles/edit_cache.dir
-/home/elabbas/system_monitor/green_sys/build/CMakeFiles/rebuild_cache.dir
