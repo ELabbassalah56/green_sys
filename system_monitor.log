@@ -1,0 +1,49 @@
+2025-02-11 22:06:33 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:06:34 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:06:34 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:06:35 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:06:35 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:06:35 [FATAL] Failed to parse /proc/[pid]/stat correctly.
+2025-02-11 22:06:35 [FATAL] Read line: 8430 (monitor_tests) R 329 8430 329 34816 8430 4194304 211 0 0 0 0 0 0 0 20 0 1 0 148331 7733248 1152 18446744073709551615 93937212760064 93937213237525 140729217318944 0 0 0 0 0 0 0 0 0 17 1 0 0 0 0 0 93937213445776 93937213456440 93937474121728 140729217325415 140729217325437 140729217325437 140729217327074 0
+2025-02-11 22:06:35 [FATAL] Failed to parse /proc/[pid]/stat correctly.
+2025-02-11 22:06:35 [FATAL] Read line: 8430 (monitor_tests) R 329 8430 329 34816 8430 4194304 211 0 0 0 0 0 0 0 20 0 1 0 148331 7733248 1152 18446744073709551615 93937212760064 93937213237525 140729217318944 0 0 0 0 0 0 0 0 0 17 1 0 0 0 0 0 93937213445776 93937213456440 93937474121728 140729217325415 140729217325437 140729217325437 140729217327074 0
+2025-02-11 22:06:35 [FATAL] Failed to parse /proc/[pid]/stat correctly.
+2025-02-11 22:06:35 [FATAL] Read line: 8430 (monitor_tests) R 329 8430 329 34816 8430 4194304 211 0 0 0 0 0 0 0 20 0 1 0 148331 7733248 1152 18446744073709551615 93937212760064 93937213237525 140729217318944 0 0 0 0 0 0 0 0 0 17 1 0 0 0 0 0 93937213445776 93937213456440 93937474121728 140729217325415 140729217325437 140729217325437 140729217327074 0
+2025-02-11 22:08:00 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:08:01 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:08:01 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:08:02 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:08:02 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:08:02 [FATAL] Failed to parse /proc/[pid]/stat correctly.
+2025-02-11 22:08:02 [FATAL] Read line: 8751 (monitor_tests) R 329 8751 329 34816 8751 4194304 215 0 0 0 0 0 0 0 20 0 1 0 157043 7733248 1191 18446744073709551615 94295581986816 94295582464277 140732420846496 0 0 0 0 0 0 0 0 0 17 30 0 0 0 0 0 94295582672528 94295582683192 94295930306560 140732420852071 140732420852093 140732420852093 140732420853730 0
+2025-02-11 22:08:02 [FATAL] Failed to parse /proc/[pid]/stat correctly.
+2025-02-11 22:08:02 [FATAL] Read line: 8751 (monitor_tests) R 329 8751 329 34816 8751 4194304 215 0 0 0 0 0 0 0 20 0 1 0 157043 7733248 1191 18446744073709551615 94295581986816 94295582464277 140732420846496 0 0 0 0 0 0 0 0 0 17 30 0 0 0 0 0 94295582672528 94295582683192 94295930306560 140732420852071 140732420852093 140732420852093 140732420853730 0
+2025-02-11 22:08:02 [FATAL] Failed to parse /proc/[pid]/stat correctly.
+2025-02-11 22:08:02 [FATAL] Read line: 8751 (monitor_tests) R 329 8751 329 34816 8751 4194304 215 0 0 0 0 0 0 0 20 0 1 0 157043 7733248 1191 18446744073709551615 94295581986816 94295582464277 140732420846496 0 0 0 0 0 0 0 0 0 17 30 0 0 0 0 0 94295582672528 94295582683192 94295930306560 140732420852071 140732420852093 140732420852093 140732420853730 0
+2025-02-11 22:12:22 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:12:23 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:12:23 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:12:24 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:12:24 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:12:24 [FATAL] Failed to parse /proc/[pid]/stat correctly.
+2025-02-11 22:12:24 [FATAL] Read line: 9826 (monitor_tests) R 329 9826 329 34816 9826 4194304 206 0 19 0 0 0 0 0 20 0 1 0 183252 7733248 1239 18446744073709551615 94361610530816 94361611008277 140736405735392 0 0 0 0 0 0 0 0 0 17 30 0 0 0 0 0 94361611216528 94361611227192 94362020380672 140736405743975 140736405743997 140736405743997 140736405745634 0
+2025-02-11 22:12:24 [FATAL] Failed to parse /proc/[pid]/stat correctly.
+2025-02-11 22:12:24 [FATAL] Read line: 9826 (monitor_tests) R 329 9826 329 34816 9826 4194304 206 0 19 0 0 0 0 0 20 0 1 0 183252 7733248 1239 18446744073709551615 94361610530816 94361611008277 140736405735392 0 0 0 0 0 0 0 0 0 17 30 0 0 0 0 0 94361611216528 94361611227192 94362020380672 140736405743975 140736405743997 140736405743997 140736405745634 0
+2025-02-11 22:12:24 [FATAL] Failed to parse /proc/[pid]/stat correctly.
+2025-02-11 22:12:24 [FATAL] Read line: 9826 (monitor_tests) R 329 9826 329 34816 9826 4194304 206 0 19 0 0 0 0 0 20 0 1 0 183252 7733248 1239 18446744073709551615 94361610530816 94361611008277 140736405735392 0 0 0 0 0 0 0 0 0 17 30 0 0 0 0 0 94361611216528 94361611227192 94362020380672 140736405743975 140736405743997 140736405743997 140736405745634 0
+2025-02-11 22:36:03 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:36:04 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:36:04 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:36:05 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:36:05 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:36:05 [INFO] Successfully parsed /proc/[pid]/stat.
+2025-02-11 22:36:05 [INFO] Successfully parsed /proc/[pid]/stat.
+2025-02-11 22:36:05 [INFO] Successfully parsed /proc/[pid]/stat.
+2025-02-11 22:36:50 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:36:50 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:36:51 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:36:51 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:36:52 [INFO] Total time difference is zero, unable to calculate CPU usage.
+2025-02-11 22:36:52 [INFO] Successfully parsed /proc/[pid]/stat.
+2025-02-11 22:36:52 [INFO] Successfully parsed /proc/[pid]/stat.
+2025-02-11 22:36:52 [INFO] Successfully parsed /proc/[pid]/stat.

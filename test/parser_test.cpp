@@ -16,7 +16,6 @@ protected:
 TEST_F(CpuParserTest, GetCPUUsage_ReturnsValidPercentage) {
     std::string usage = cpuParser.GetCPUUsage();
     EXPECT_FALSE(usage.empty());
-    std::cerr << "Output: " << usage << std::endl;
     EXPECT_TRUE(usage.find('%') != std::string::npos);  // Check if output contains '%'
 }
 
@@ -50,10 +49,10 @@ TEST_F(CpuParserTest, GetActiveJiffiesForPID_ReturnsPositiveValue) {
 // Test GetProcessorUtilization(int pid)
 TEST_F(CpuParserTest, GetProcessorUtilization_ReturnsValidStruct) {
     int pid = getpid();  // Get current process ID
-    pid_state_t procStats = cpuParser.GetProcessorUtilization(pid);
-    ASSERT_EQ(procStats.pid, pid) << "PID mismatch";
-    EXPECT_GE(procStats.utime, 0)<< "utime is greater than 0";
-    EXPECT_GE(procStats.stime, 0)<< "stime is greater than 0";
+    std::vector<std::string> procStats = cpuParser.GetProcessorUtilization(pid);
+    ASSERT_EQ( std::stol(procStats[0]), pid) << "PID mismatch";
+    EXPECT_GE(std::stol(procStats[13]), 0)<< "utime is greater than 0";
+    EXPECT_GE(std::stol(procStats[14]), 0)<< "stime is greater than 0";
 }
 
 // Test GetActiveJiffies()

@@ -90,62 +90,62 @@ enum class CPUStates {
     gtime 
     cgtime
 */
-typedef struct PidState {
-  int pid;                     /** process id **/
-  std::string tcomm;  /** filename of the executable **/
-  char state;                   /** state (R is running, S is sleeping, D is sleeping in an
-                                     uninterruptible wait, Z is zombie, T is traced or stopped) **/
-  int ppid;                     /** process id of the parent process **/
-  int pgrp;                     /** pgrp of the process **/
-  int sid;                      /** session id **/
-  int tty_nr;                   /** tty the process uses **/
-  int tty_pgrp;                 /** pgrp of the tty **/
-  unsigned int flags;           /** task flags **/
-  unsigned int min_flt;         /** number of minor faults **/
-  unsigned int cmin_flt;        /** number of minor faults with child's **/
-  unsigned int maj_flt;         /** number of major faults **/
-  unsigned int cmaj_flt;        /** number of major faults with child's **/
-  int utime;                    /** user mode jiffies **/
-  int stime;                    /** kernel mode jiffies **/
-  int cutime;                   /** user mode jiffies with child's **/
-  int cstime;                   /** kernel mode jiffies with child's **/
-  int priority;                 /** priority level **/
-  int nice;                     /** nice level **/
-  int num_threads;              /** number of threads **/
-  int it_real_value;            /** (obsolete, always 0) **/
-  int start_time;               /** time the process started after system boot **/
-  unsigned int vsize;           /** virtual memory size **/
-  unsigned int rss;             /** resident set memory size **/
-  unsigned long long rsslim;          /** current limit in bytes on the rss **/
-  unsigned int start_code;      /** address above which program text can run **/
-  unsigned int end_code;        /** address below which program text can run **/
-  unsigned int start_stack;     /** address of the start of the main process stack **/
-  unsigned int esp;             /** current value of ESP **/
-  unsigned int eip;             /** current value of EIP **/
-  int pending;                  /** bitmap of pending signals **/
-  int blocked;                  /** bitmap of blocked signals **/
-  int sigign;                   /** bitmap of ignored signals **/
-  int sigcatch;                 /** bitmap of caught signals **/
-  unsigned int wchan;           /** (place holder, use /proc/PID/wchan instead) **/
-  unsigned int zero1;           /** (place holder) **/
-  unsigned int zero2;           /** (place holder) **/
-  int exit_signal;              /** signal to send to parent thread on exit **/
-  int task_cpu;                 /** which CPU the task is scheduled on **/
-  int rt_priority;              /** realtime priority **/
-  int policy;                   /** scheduling policy (man sched_setscheduler) **/
-  unsigned int blkio_ticks;     /** time spent waiting for block IO **/
-  int gtime;                    /** guest time of the task in jiffies **/
-  int cgtime;                   /** guest time of the task children in jiffies **/
-  unsigned int start_data;      /** address above which program data+bss is placed **/
-  unsigned int end_data;        /** address below which program data+bss is placed **/
-  unsigned int start_brk;       /** address above which program heap can be expanded with brk() **/
-  unsigned int arg_start;       /** address above which program command line is placed **/
-  unsigned int arg_end;         /** address below which program command line is placed **/
-  unsigned int env_start;       /** address above which program environment is placed **/
-  unsigned int env_end;         /** address below which program environment is placed **/
-  int exit_code;                /** the thread's exit_code in the form reported by the waitpid system call **/
-  unsigned long getActiveJiffies() const {return (utime + stime + cutime + cstime);}
-}pid_state_t;
+// typedef struct PidState {
+//   int pid;                     /** process id **/
+//   std::string tcomm;  /** filename of the executable **/
+//   char state;                   /** state (R is running, S is sleeping, D is sleeping in an
+//                                      uninterruptible wait, Z is zombie, T is traced or stopped) **/
+//   int ppid;                     /** process id of the parent process **/
+//   int pgrp;                     /** pgrp of the process **/
+//   int sid;                      /** session id **/
+//   int tty_nr;                   /** tty the process uses **/
+//   int tty_pgrp;                 /** pgrp of the tty **/
+//   unsigned int flags;           /** task flags **/
+//   unsigned int min_flt;         /** number of minor faults **/
+//   unsigned int cmin_flt;        /** number of minor faults with child's **/
+//   unsigned int maj_flt;         /** number of major faults **/
+//   unsigned int cmaj_flt;        /** number of major faults with child's **/
+//   int utime;                    /** user mode jiffies **/
+//   int stime;                    /** kernel mode jiffies **/
+//   int cutime;                   /** user mode jiffies with child's **/
+//   int cstime;                   /** kernel mode jiffies with child's **/
+//   int priority;                 /** priority level **/
+//   int nice;                     /** nice level **/
+//   int num_threads;              /** number of threads **/
+//   int it_real_value;            /** (obsolete, always 0) **/
+//   int start_time;               /** time the process started after system boot **/
+//   unsigned int vsize;           /** virtual memory size **/
+//   unsigned int rss;             /** resident set memory size **/
+//   unsigned long long rsslim;          /** current limit in bytes on the rss **/
+//   unsigned int start_code;      /** address above which program text can run **/
+//   unsigned int end_code;        /** address below which program text can run **/
+//   unsigned int start_stack;     /** address of the start of the main process stack **/
+//   unsigned int esp;             /** current value of ESP **/
+//   unsigned int eip;             /** current value of EIP **/
+//   int pending;                  /** bitmap of pending signals **/
+//   int blocked;                  /** bitmap of blocked signals **/
+//   int sigign;                   /** bitmap of ignored signals **/
+//   int sigcatch;                 /** bitmap of caught signals **/
+//   unsigned int wchan;           /** (place holder, use /proc/PID/wchan instead) **/
+//   unsigned int zero1;           /** (place holder) **/
+//   unsigned int zero2;           /** (place holder) **/
+//   int exit_signal;              /** signal to send to parent thread on exit **/
+//   int task_cpu;                 /** which CPU the task is scheduled on **/
+//   int rt_priority;              /** realtime priority **/
+//   int policy;                   /** scheduling policy (man sched_setscheduler) **/
+//   unsigned int blkio_ticks;     /** time spent waiting for block IO **/
+//   int gtime;                    /** guest time of the task in jiffies **/
+//   int cgtime;                   /** guest time of the task children in jiffies **/
+//   unsigned int start_data;      /** address above which program data+bss is placed **/
+//   unsigned int end_data;        /** address below which program data+bss is placed **/
+//   unsigned int start_brk;       /** address above which program heap can be expanded with brk() **/
+//   unsigned int arg_start;       /** address above which program command line is placed **/
+//   unsigned int arg_end;         /** address below which program command line is placed **/
+//   unsigned int env_start;       /** address above which program environment is placed **/
+//   unsigned int env_end;         /** address below which program environment is placed **/
+//   int exit_code;                /** the thread's exit_code in the form reported by the waitpid system call **/
+//   unsigned long getActiveJiffies() const {return (utime + stime + cutime + cstime);}
+// }pid_state_t;
 
 /*
 User – Time in user mode.
@@ -180,7 +180,7 @@ class ICpuParser {
   virtual std::string GetCPUUsage() = 0;
   virtual std::string GetCPUInfo() = 0;
   virtual std::vector<cpu_data_t> GetCpuUtilization() = 0;
-  virtual pid_state_t GetProcessorUtilization(int pid) = 0;
+  virtual std::vector<std::string> GetProcessorUtilization(int pid) = 0;
   virtual long GetJiffies() = 0;
   virtual long GetActiveJiffies() = 0;
   virtual long GetActiveJiffies(int pid) = 0;
@@ -236,7 +236,7 @@ class CpuParser : public ICpuParser {
   std::string GetCPUUsage() override;
   std::string GetCPUInfo() override;
   std::vector<cpu_data_t> GetCpuUtilization() override;
-  pid_state_t GetProcessorUtilization(int pid) override;
+  std::vector<std::string> GetProcessorUtilization(int pid) override;
   long GetJiffies() override;
   long GetActiveJiffies() override;
   long GetActiveJiffies(int pid) override;
@@ -247,7 +247,6 @@ class CpuParser : public ICpuParser {
   Logger& logger_ = Logger::GetInstance();
   // Shared pointer to hold the vector, shared across functions
   std::shared_ptr<std::vector<cpu_data_t>> cpu_data_list_;
-  std::shared_ptr<pid_state_t> pid_data_;
 };
 
 class MemoryParser : public IMemoryParser {
